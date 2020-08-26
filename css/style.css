@@ -24,36 +24,56 @@ body {
 /* カラム */
 
 .leftnavi {
-  width: 300px;
-  border-right: solid 5px #000;
-  background-color: #676767;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 200px;
+  background-color: #cdcdcd;
+  padding: 0 15px;
 }
 
 .contents {
-  width: 700px;
-  border-right: solid 5px #000;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 500px;
+  border-right: solid 1px #000;
+  overflow: auto;  /* 溢れをスクロールできるようにする */
+  scrollbar-width: none;　/* スクロールバーを消す（Firefox） */
+}
+
+/* スクロールバーを消す（Chrome、Safari） */
+
+.contents::-webkit-scrollbar {
+  display: none;
 }
 
 .rightnavi {
-  background-color: #676767;
   flex: 1;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
+}
+
+.undernavi {
+  display: none;
 }
 
 /* レフトメニュー */
 
+.menu ul {
+  padding: 0;
+}
+
 .menu ul li {
   list-style: none;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu ul li a:hover {
+  color: #f361a7;
 }
 
 .menu ul li a img {
-  width: 60px;
-  margin-top: 30px;
+  width: 40px;
 }
 
 .menu ul li:last-child {
@@ -63,9 +83,109 @@ body {
 /* メインコンテンツ */
 
 .header {
-  border-bottom: solid 5px #000;
+  padding: 10px 0;
+  background-color: #4499cc;
+}
+
+.header ul {
+  display: none;
+}
+
+.main_contents {
+  padding: 0 15px;
 }
 
 h2 {
   text-align: center;
+  margin: 0;
+}
+
+.menu ul li span {
+  margin-left: 15px;
+}
+
+/* ライトメニュー */
+
+/* 全部共通 */
+
+/* 以下レスポンシブ */
+
+@media screen and (max-width: 1024px) {
+  /* 1024pxまでの幅の場合に適応される */
+  .undernavi {
+    display: none;
+  }
+  .leftnavi {
+    width: 200px;
+    background-color: #cdcdcd;
+    padding: 0 15px;
+  }
+  .contents {
+    flex: 1;
+  }
+  .rightnavi {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  /* 896pxまでの幅の場合に適応される */
+  .leftnavi {
+    display: none;
+  }
+  .contents {
+    flex: 1;
+  }
+  .rightnavi {
+    display: none;
+  }
+  /* undernaviを出現させる */
+  .undernavi {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #4499cc;
+    position: fixed;
+    z-index: 999;
+  }
+  .under_menu ul {
+    padding: 5px 0;
+    margin: 0;
+    text-align: center;
+  }
+  .under_menu ul li {
+    list-style: none;
+    font-size: 10px;
+    display: inline-block;
+    margin-left: 4vh;
+  }
+  .under_menu ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  .under_menu ul li a:hover {
+    color: #f361a7;
+  }
+  .under_menu ul li a img {
+    width: 40px;
+  }
+  .under_menu ul li span {
+    display: block;
+  }
+  .under_menu ul li:last-child {
+    margin-right: 4vh;
+  }
+  /* 設定アイコンを出現させる */
+  .header ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .header ul li {
+    list-style: none;
+  }
+  .header ul li a img {
+    width: 30px;
+  }
 }
