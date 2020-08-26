@@ -9,9 +9,8 @@
   <meta name="keywords" content="アプリ, SNS, コンコン, うーじー, せきしょう">
 
   <title>アプリ名/トーク</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
   <link type="text/css" rel="stylesheet" href="css/talk.css">
-  <link type="text/css" rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -36,6 +35,9 @@
     <div class="contents">
       <div class="header">
         <h2>ホーム</h2>
+        <ul>
+          <li><a href="match.html"><img src="images/icon_settings_white.png" alt="設定アイコン"></a></li>
+        </ul>
       </div>
       <div class="main_contents">
         <!-- ーーーーーここにそれぞれのコンテンツを配置するーーーーー -->
@@ -43,53 +45,53 @@
         <div class="container">
 
           <!-- メッセージエリア -->
-      
+
           <ul class="messages">
             <li class="left-side">
               <div class="pic">
                 <img src="talk-images/dog.png">
               </div>
-      
+
               <div class="text">
                 こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
               </div>
             </li>
-      
+
             <li class="right-side">
               <div class="pic">
                 <img src="talk-images/cat.png">
               </div>
-      
+
               <div class="text">
                 お久しぶりです！
               </div>
             </li>
-      
+
             <li class="left-side">
               <div class="pic">
                 <img src="talk-images/dog.png">
               </div>
-      
+
               <div class="text">
                 こんにちは。こんにちは。
               </div>
             </li>
-      
+
             <li class="right-side">
               <div class="pic">
                 <img src="talk-images/cat.png">
               </div>
-      
+
               <div class="text">
                 お久しぶりです！
-               </div>
+              </div>
             </li>
-      
+
             <li class="left-side">
               <div class="pic">
                 <img src="talk-images/dog.png">
               </div>
-      
+
               <div class="text">
                 こんにちは。こんにちは。
               </div>
@@ -98,16 +100,26 @@
         </div>
 
         <!-- 入力エリア -->
-        
+
         <div class="send">
           <div id="bms_send">
             <textarea id="bms_send_message"></textarea>
             <div id="bms_send_btn">送信</div>
           </div>
         </div>
-      
-        
 
+
+        <!-- アンダーナビ（スマホ版） -->
+        <div class="undernavi">
+          <div class="under_menu">
+            <ul>
+              <li><a href="home.html"><img src="images/icon_home_black.png" alt="ホームアイコン"><span>ホーム</span></a></li>
+              <li><a href="list.html"><img src="images/icon_list_white.png" alt="リストアイコン"><span>リスト</span></a></li>
+              <li><a href="talk.html"><img src="images/icon_talk_white.png" alt="トークアイコン"><span>トーク</span></a></li>
+              <li><a href="match.html"><img src="images/icon_match_white.png" alt="マッチアイコン"><span>マッチ</span></a></li>
+            </ul>
+          </div>
+        </div>
         <!-- ーーーーーコンテンツ配置ここまでーーーーーーーーーーーー -->
       </div>
     </div>
@@ -115,7 +127,6 @@
 
     <!-- ライトナビ -->
     <div class="rightnavi">
-
     </div>
 
   </div>

@@ -99,7 +99,7 @@
   }
 }
 /* WEB版 */
-@media screen and (min-width: 897px) {
+@media screen and (min-width: 896px) {
   .container-calendar {
     background: #ffffff;
     width: 100%;
