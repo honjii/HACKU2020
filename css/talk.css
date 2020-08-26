@@ -3,13 +3,15 @@
   height: 1125px;
 } */
 
+.body {
+  background: skyblue; 
+}
 .container {
   margin: 0;
   background: skyblue;
-}
-
-.container {
   padding: 32px;
+  height: 1000px;
+  /* position: relative; */
 }
 
 .messages {
@@ -76,6 +78,10 @@ li.right-side {
 
 /* 入力エリア */
 
+.send {
+  background: skyblue;
+}
+
 #bms_send {
   background-color:#eee;/*タイムラインの色と同じにする*/
   border-right: 1px solid #ddd;
@@ -83,6 +89,8 @@ li.right-side {
   border-bottom: 1px solid #ddd;
   height: 48px;
   padding: 4px;
+  /* position: absolute; */
+  bottom: 5px;
 }
 
 #bms_send_message{
