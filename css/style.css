@@ -32,13 +32,15 @@ body {
 .contents {
   width: 500px;
   border-right: solid 1px #000;
-  overflow: auto;  /* 溢れをスクロールできるようにする */
-  scrollbar-width: none;/* スクロールバーを消す（Firefox） */
+  /* 溢れをスクロールできるようにする */
+  overflow: auto;
+  /* スクロールバーを消す（Firefox） */
+  scrollbar-width: none;
 }
 
-/* スクロールバーを消す（Chrome、Safari） */
 
 .contents::-webkit-scrollbar {
+  /* スクロールバーを消す（Chrome、Safari） */
   display: none;
 }
 
@@ -89,10 +91,6 @@ body {
 
 .header ul {
   display: none;
-}
-
-.main_contents {
-  padding: 0 15px;
 }
 
 h2 {

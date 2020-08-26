@@ -17,9 +17,22 @@ var createYear = generate_year_range(1970, 2200);
 document.getElementById("year").innerHTML = createYear;
 
 var calendar = document.getElementById("calendar");
-var lang = calendar.getAttribute('data-lang');
+var lang = calendar.getAttribute("data-lang");
 
-var months = ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"];
+var months = [
+  "1月",
+  "2月",
+  "3月",
+  "4月",
+  "5月",
+  "6月",
+  "7月",
+  "8月",
+  "9月",
+  "10月",
+  "11月",
+  "12月",
+];
 var days = ["日", "月", "火", "水", "木", "金", "土"];
 
 var dayHeader = "<tr>";
@@ -34,14 +47,14 @@ monthAndYear = document.getElementById("monthAndYear");
 showCalendar(currentMonth, currentYear);
 
 function next() {
-  currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
+  currentYear = currentMonth === 11 ? currentYear + 1 : currentYear;
   currentMonth = (currentMonth + 1) % 12;
   showCalendar(currentMonth, currentYear);
 }
 
 function previous() {
-  currentYear = (currentMonth === 0) ? currentYear - 1 : currentYear;
-  currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
+  currentYear = currentMonth === 0 ? currentYear - 1 : currentYear;
+  currentMonth = currentMonth === 0 ? 11 : currentMonth - 1;
   showCalendar(currentMonth, currentYear);
 }
 
@@ -52,8 +65,7 @@ function jump() {
 }
 
 function showCalendar(month, year) {
-
-  var firstDay = (new Date(year, month)).getDay();
+  var firstDay = new Date(year, month).getDay();
 
   tbl = document.getElementById("calendar-body");
 
@@ -85,7 +97,11 @@ function showCalendar(month, year) {
         cell.className = "date-picker";
         cell.innerHTML = "<span>" + date + "</span>";
 
-        if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
+        if (
+          date === today.getDate() &&
+          year === today.getFullYear() &&
+          month === today.getMonth()
+        ) {
           cell.className = "date-picker selected";
         }
         row.appendChild(cell);
@@ -95,7 +111,6 @@ function showCalendar(month, year) {
 
     tbl.appendChild(row);
   }
-
 }
 
 function daysInMonth(iMonth, iYear) {
