@@ -4,7 +4,6 @@
 .outer{
   text-align: center;
   margin-left: 10px;
-  /* padding: 20px; */
 }
 
 .outer img{
@@ -20,74 +19,106 @@
 .match-reception{
   text-align: center;
 }
-/* 枠 */
-.box10 {
-  padding: 0.5em 1em;
-  margin: 2em 0;
-  color: #00BCD4;
-  background: #e4fcff;
-  border-top: solid 6px #1dc1d6;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);
+
+/* アイコン */
+.char-icon{
+  width: 20px;
+  height: auto;
 }
-.box10 p {
-  margin: 0; 
-  padding: 0;
+
+.char-icon-under{
+  display: inline;
+  width: 10px;
+  height: auto;
 }
-/* ボタン */
-.btn-square-slant {
-  display: inline-block;
-  position: relative;
-  padding: 0.5em 1.4em;
+
+/* アコーディオンメニュー */
+.menu-reception {
+  width: 100%;
+}
+
+.menu-reception a {
+  display: block;
+  padding: 15px;
   text-decoration: none;
-  background: #668ad8;/*ボタン色*/
-  color: #FFF;
-  border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
-  border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+  color: #000;
 }
 
-.btn-square-slant:before {  
-  content: " ";
-  position: absolute;
-  bottom: -5px;
-  left: -1px;
-  width: 0;
+label {
+  display: block;
+  margin: 0 0 4px 0;
+  padding : 15px;
+  line-height: 1;
+  color :#fff;
+  font-weight: bold;
+  background : #006699;
+  cursor :pointer;
+  transition: all 0.5s;
+}
+
+label:hover{
+  background-color:#6aec99;
+}
+
+input {
+  display: none;
+} 
+
+ input[type="checkbox"].open_close_c{
+  display: none;
+ }
+
+ input[type="checkbox"].open_close_c + ul{
   height: 0;
-  border-width: 0 6px 6px 0px;
-  border-style: solid;
-  border-color: transparent;
-  border-bottom-color: #FFF;
+  overflow: hidden;
+ }
+ input[type="checkbox"].open_close_c:checked + ul{
+  height: 110px;
+  padding:10px;
+ }
+
+.menu-reception ul {
+  margin: 0;
+  padding: 0;
+  background :#f4f4f4;
+  list-style: none;
 }
 
-.btn-square-slant:after {  
-  content: " ";
-  position: absolute;
-  top: -1px;
-  right: -5px;
-  width: 0;
+.menu-reception li {
   height: 0;
-  border-width: 0px 6px 6px 0px;
-  border-style: solid;
-  border-color: #FFF;
-  border-bottom-color: transparent;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.btn-square-slant:active {
-  /*ボタンを押したとき*/
-  border:none;
-  -webkit-transform: translate(6px,6px);
-  transform: translate(6px,6px);
+#menu_bar01:checked ~ #links01 li,
+#menu_bar02:checked ~ #links02 li,
+#menu_bar03:checked ~ #links03 li,
+#menu_bar04:checked ~ #links04 li {
+  height: 54px;
+  opacity: 1;
 }
 
-.btn-square-slant:active:after, .btn-square-slant:active:before {
-  content: none;/*ボタンを押すと線が消える*/
-}
+/* ボタン */
 
 .botton-1
 {
-  text-align: right;
+  text-align: center;
 }
 
-.botton-2
-{
-  text-align: right;
+input[type="submit"]{
+	background-color: #1188BB;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: auto;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
 }
