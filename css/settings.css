@@ -1,0 +1,42 @@
+.contents .main_contents p {
+    background-color: rgb(79, 107, 167);
+    border-top: 1px solid #000;
+    margin: 0;
+    text-decoration: none;
+}
+
+.contents .main_contents p a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding: 15px;
+}
+
+.contents .main_contents p a:hover {
+    background-color: #777;
+}
+
+.contents .main_contents p a::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 40px;
+    top: calc(50% - 2px);
+    border-top: solid 2px;
+    border-right: solid 2px;
+    transform: rotate(45deg) translateY(-50%);
+    color: inherit;
+}
+
+.contents .main_contents h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.rogout a{
+    background-color: rgb(122, 74, 74);
+}
