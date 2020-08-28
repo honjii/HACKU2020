@@ -1,0 +1,61 @@
+@charset "UTF-8";
+p {
+  margin: 0;
+  padding: 0;
+}
+/* 検索欄 */
+.search-wrapper {
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* 利用者プロフィール */
+.user-profile-wrapper {
+  position: relative;
+}
+.user-icon {
+  display: inline-block;
+  width: 50px;
+  margin: auto 10px;
+}
+.user-name {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* 友達一覧 */
+
+/* 友達数表示 */
+.friend-list-title {
+  position: relative;
+}
+.friend-list-text {
+  font-size: 20px;
+  margin-left: 30px;
+  display: inline-block;
+}
+.friend-list-count {
+  font-size: 14px;
+  display: inline-block;
+}
+/* 友達プロフィール */
+.friend-prifile {
+  position: relative;
+}
+.friend-icon {
+  display: inline-block;
+  width: 50px;
+  margin: auto 10px;
+}
+.friend-name {
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
