@@ -25,8 +25,12 @@ body {
 
 .leftnavi {
   width: 200px;
-  background-color: #cdcdcd;
   padding: 0 15px;
+  background-color: #03d3d3;
+}
+
+.leftnavi h1 img {
+  width: 150px;
 }
 
 .contents {
@@ -37,7 +41,6 @@ body {
   /* スクロールバーを消す（Firefox） */
   scrollbar-width: none;
 }
-
 
 .contents::-webkit-scrollbar {
   /* スクロールバーを消す（Chrome、Safari） */
@@ -86,7 +89,7 @@ body {
 
 .header {
   padding: 10px 0;
-  background-color: #4499cc;
+  background-color: #03d3d3;
 }
 
 .header ul {
@@ -115,7 +118,6 @@ h2 {
   }
   .leftnavi {
     width: 200px;
-    background-color: #cdcdcd;
     padding: 0 15px;
   }
   .contents {
@@ -143,7 +145,7 @@ h2 {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #4499cc;
+    background: #03d3d3;
     position: fixed;
     z-index: 999;
   }
@@ -176,13 +178,24 @@ h2 {
     margin-right: 4vh;
   }
   /* 設定アイコンを出現させる */
+  .header {
+  text-align: center;
+  position: relative;
+  }
+  .header h2 {
+    display: inline-block;
+  }
   .header ul {
-    display: block;
+    display: inline-block;
+    position: absolute;
     margin: 0;
     padding: 0;
+    top: 18%;
+    left: 87%;
   }
   .header ul li {
     list-style: none;
+    display: inline-block;
   }
   .header ul li a img {
     width: 30px;
