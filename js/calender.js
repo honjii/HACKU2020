@@ -65,13 +65,13 @@ function jump() {
 }
 
 function showCalendar(month, year) {
-  var firstDay = new Date(year, month).getDay();
+  var firstDay = new Date(month, year).getDay();
 
   tbl = document.getElementById("calendar-body");
 
   tbl.innerHTML = "";
 
-  monthAndYear.innerHTML = months[month] + " " + year;
+  monthAndYear.innerHTML = year + " " + months[month];
   selectYear.value = year;
   selectMonth.value = month;
 
