@@ -1,5 +1,5 @@
 .contents .main_contents p {
-    background-color: rgb(79, 107, 167);
+    background-color: #006699;
     border-top: 1px solid #000;
     margin: 0;
     text-decoration: none;
@@ -8,13 +8,13 @@
 .contents .main_contents p a {
     display: block;
     text-decoration: none;
-    color: #333;
+    color: #fff;
     position: relative;
     padding: 15px;
 }
 
 .contents .main_contents p a:hover {
-    background-color: #777;
+    background-color: #6aec99;
 }
 
 .contents .main_contents p a::after {
@@ -37,6 +37,6 @@
     padding-left: 15px;
 }
 
-.rogout a{
-    background-color: rgb(122, 74, 74);
+.rogout a {
+    background-color: #006699;
 }
