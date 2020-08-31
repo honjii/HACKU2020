@@ -1,27 +1,41 @@
 @charset "UTF-8";
 @import url("normalize.css");
 
-.talk_home {
+/* .talk_home {
 
-}
+} */
 
 .talk_user {
-  height: 100px;
+  height: 70px;
   display: flex;
   position: relative;
+  z-index: 1;
+}
+.talk_user a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+  z-index: 2;
+}
+
+.talk_user:hover {
+  background-color: #E8E8E8;
 }
 
 /* ユーザーのアイコン */
 .user_icon img {
-  height: 75px;
-  margin: 15px;
+  height: 60px;
+  margin: 5px 10px;
   border-radius: 50%;
 }
 
 .user_name {
   position: absolute;
   top: 25%;
-  left: 100px;
+  left: 90px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -29,12 +43,20 @@
 /* いちばん最近のトーク内容１件 */
 .talk_contents {
   position: absolute;
+  width: 100%;
   top: 55%;
-  left: 100px;
+  left: 90px;
   opacity: 0.5; /* 透明度を50%に */
 }
 .talk_contents p {
   margin: 0;
+  height: 18px;
+
+  /* 最近のトーク内容が領域をはみ出したら省略される */
+  width: calc(100% - 115px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* 最後に入力された時刻 */
