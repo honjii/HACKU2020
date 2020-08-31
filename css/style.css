@@ -47,6 +47,10 @@ body {
   display: none;
 }
 
+.main_contents {
+  margin-top: 47px;
+}
+
 .rightnavi {
   flex: 1;
   padding: 0 15px;
@@ -88,6 +92,9 @@ body {
 /* メインコンテンツ */
 
 .header {
+  position: fixed;
+  z-index: 999;
+  width: 499px;
   padding: 10px 0;
   background-color: #03d3d3;
 }
@@ -120,6 +127,9 @@ h2 {
     width: 200px;
     padding: 0 15px;
   }
+  .header {
+    width: 100%;
+  }
   .contents {
     flex: 1;
   }
@@ -135,6 +145,9 @@ h2 {
   }
   .contents {
     flex: 1;
+  }
+  .main_contents {
+    margin-bottom: 55px;
   }
   .rightnavi {
     display: none;
@@ -179,8 +192,8 @@ h2 {
   }
   /* 設定アイコンを出現させる */
   .header {
-  text-align: center;
-  position: relative;
+    position: fixed;
+    text-align: center;
   }
   .header h2 {
     display: inline-block;

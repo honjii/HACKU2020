@@ -9,6 +9,7 @@ p {
 .search-wrapper {
   text-align: center;
   margin: 20px auto;
+  margin-top: 57px;
 }
 
 input[type="text"] {
