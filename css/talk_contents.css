@@ -1,0 +1,178 @@
+/* .body {
+  width: 2436px;
+  height: 1125px;
+} */
+
+.body {
+  background: skyblue; 
+}
+
+.header {
+  position: relative;
+  height: 70px;
+}
+
+.contents {
+  background: skyblue;
+}
+.container {
+  margin: 0;
+  background: skyblue;
+  padding: 32px;
+  height: 100%;
+}
+
+:focus {
+  outline: none;
+}
+
+
+#back_button img {
+  position: absolute;
+  width: 30px;
+  left: 20px;
+  top: 20px;
+}
+
+.header h2 {
+  position: absolute;
+  left: 80px;
+  top: 22px;
+}
+
+.messages {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  /* height: 1800px; */
+  list-style: none;
+}
+
+.messages li {
+  display: flex;
+}
+
+.messages li + li {
+  margin-top: 32px;
+}
+
+li.right-side {
+  flex-direction: row-reverse;
+}
+
+.pic {
+  /* background: pink; */
+  width: 80px;
+  text-align: center;
+}
+
+.pic img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.text {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  max-width: 60%;
+  line-height: 1.8;
+  position: relative;
+}
+
+.text::before {
+  content: '';
+  width: 0;
+  height: 0;
+  /* border: 8px solid #fff; */
+  border: 8px solid transparent;
+  position: absolute;
+}
+
+.left-side .text::before {
+  top: 12px;
+  left: -16px;
+  border-right-color: #fff;
+}
+
+.right-side .text::before {
+  top: 12px;
+  right: -16px;
+  border-left-color: #fff;
+}
+
+/* 入力エリア */
+
+.send {
+  background: skyblue;
+}
+
+
+#bms_send {
+  background-color:#eee;/*タイムラインの色と同じにする*/
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  height: 48px;
+  width: 100%;
+  padding: 5px;
+  bottom: 0px;
+  position: relative;
+}
+
+#bms_send_message {
+  width: calc(100% - 115px);/*常に送信ボタンの横幅を引いたサイズに動的に計算*/
+  line-height: 16px;
+  height: 30px;
+  margin: 3px 0 4px 0;
+  padding: 6px 43px 5px 15px;
+  border-radius: 50px;/*角丸*/
+  text-align: left;/*文字を左寄せ*/
+  resize: none; /* 右下の//を消した */
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.2) inset;/*内側に影を入れてテキストエリアらしくした*/
+  box-sizing: border-box;/*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
+}
+#send_btn_stamp {
+  position: absolute;
+  bottom: 13px;
+  left: calc(100% - 91px);
+}
+#bms_send_btn1 {
+  width: 37px;
+  height: 37px;
+  margin: 0 10px;
+  font-size: 16px;
+  line-height: 3em;
+  float: left;/*bms_sendに対して右寄せ*/
+  color: #fff;
+  font-weight: bold;
+  /* background: #bcbcbc; */
+  text-align: center;/*文字をボタン中央に表示*/
+  /* border: 1px solid #bbb; */
+  border-radius: 4px;/*角丸*/
+  box-sizing: border-box;/*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
+}
+#bms_send_btn {
+  width: 37px;
+  height: 37px;
+  margin: 0 10px;
+  font-size: 16px;
+  line-height: 3em;
+  float: right;/*bms_sendに対して右寄せ*/
+  color: #fff;
+  font-weight: bold;
+  /* background: #bcbcbc; */
+  text-align: center;/*文字をボタン中央に表示*/
+  /* border: 1px solid #bbb; */
+  border-radius: 4px;/*角丸*/
+  box-sizing: border-box;/*paddingとborderの要素の高さと幅の影響をなくす（要素に高さと幅を含める）*/
+}
+.send_btn_image {
+  width: 22.5px;
+  height: 22.5px;
+}
+#bms_send_btn:hover {
+  background: #13178E; /*マウスポインタを当てた時にアクティブな色になる*/
+  cursor: pointer;/*マウスポインタを当てた時に、カーソルが指の形になる*/
+}
