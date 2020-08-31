@@ -52,7 +52,7 @@
     text-align: center;
     margin-top: 10px;
   }
-  .day_wrapper{
+  .day_wrapper {
     margin-bottom: 54px;
   }
   /* 日曜 */
@@ -67,7 +67,6 @@
     color: blue;
   }
 
-
   .button-container-calendar {
     position: relative;
     margin-bottom: 1em;
@@ -77,14 +76,15 @@
 
   #previous {
     float: left;
-    margin-left:10em;
+    margin-left: 10em;
+    outline: none;
   }
 
   #next {
     float: right;
     margin-right: 10em;
+    outline: none;
   }
-
 
   .footer-container-calendar {
     margin-top: 40px;
@@ -160,7 +160,7 @@
     text-align: center;
     margin-top: 0;
   }
-  .day_wrapper{
+  .day_wrapper {
     margin-bottom: 30px;
     margin-top: 30px;
   }
@@ -175,8 +175,6 @@
   .date-picker:nth-child(7) {
     color: blue;
   }
-
-
 
   .button-container-calendar {
     position: relative;
@@ -268,7 +266,7 @@
     margin-top: 10px;
     margin-bottom: -46px;
   }
-  .day_wrapper{
+  .day_wrapper {
     margin-bottom: 30px;
     margin-top: 50px;
   }
