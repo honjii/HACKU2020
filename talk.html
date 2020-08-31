@@ -9,9 +9,8 @@
   <meta name="keywords" content="アプリ, SNS, コンコン, うーじー, せきしょう">
 
   <title>アプリ名/トーク</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
   <link type="text/css" rel="stylesheet" href="css/talk.css">
-  <link type="text/css" rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -22,9 +21,9 @@
       <h1>ロゴ</h1>
       <div class="menu">
         <ul>
-          <li><a href="home.html"><img src="images/icon_home_black.png" alt="ホームアイコン">ホーム</a></li>
+          <li><a href="home.html"><img src="images/icon_home_white.png" alt="ホームアイコン">ホーム</a></li>
           <li><a href="list.html"><img src="images/icon_list_white.png" alt="リストアイコン">リスト</a></li>
-          <li><a href="talk.html"><img src="images/icon_talk_white.png" alt="トークアイコン">トーク</a></li>
+          <li><a href="talk_home.html"><img src="images/icon_talk_black.png" alt="トークアイコン">トーク</a></li>
           <li><a href="match.html"><img src="images/icon_match_white.png" alt="マッチアイコン">マッチ</a></li>
           <li><a href="match.html"><img src="images/icon_settings_white.png" alt="設定アイコン">設定</a></li>
         </ul>
@@ -35,79 +34,343 @@
     <!-- メインコンテンツ -->
     <div class="contents">
       <div class="header">
-        <h2>ホーム</h2>
+        <h2>トーク</h2>
+        <ul>
+          <li><a href="match.html"><img src="images/icon_settings_white.png" alt="設定アイコン"></a></li>
+        </ul>
       </div>
       <div class="main_contents">
-        <!-- ーーーーーここにそれぞれのコンテンツを配置するーーーーー -->
 
-        <div class="container">
+      <!-- ーーーーーここにそれぞれのコンテンツを配置するーーーーー -->
 
-          <!-- メッセージエリア -->
-      
-          <ul class="messages">
-            <li class="left-side">
-              <div class="pic">
-                <img src="talk-images/dog.png">
-              </div>
-      
-              <div class="text">
-                こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。こんにちは。
-              </div>
-            </li>
-      
-            <li class="right-side">
-              <div class="pic">
-                <img src="talk-images/cat.png">
-              </div>
-      
-              <div class="text">
-                お久しぶりです！
-              </div>
-            </li>
-      
-            <li class="left-side">
-              <div class="pic">
-                <img src="talk-images/dog.png">
-              </div>
-      
-              <div class="text">
-                こんにちは。こんにちは。
-              </div>
-            </li>
-      
-            <li class="right-side">
-              <div class="pic">
-                <img src="talk-images/cat.png">
-              </div>
-      
-              <div class="text">
-                お久しぶりです！
-               </div>
-            </li>
-      
-            <li class="left-side">
-              <div class="pic">
-                <img src="talk-images/dog.png">
-              </div>
-      
-              <div class="text">
-                こんにちは。こんにちは。
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div class="talk_home">
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
 
-        <!-- 入力エリア -->
-        
-        <div class="send">
-          <div id="bms_send">
-            <textarea id="bms_send_message"></textarea>
-            <div id="bms_send_btn">送信</div>
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
           </div>
         </div>
-      
-        
+        <hr class="sikiri">
 
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+
+
+        <div class="talk_user">
+          <div class="user_icon">
+            <img src="talk-images/iconmonstr-user-circle-thin-120.png">
+          </div>
+
+          <!-- ユーザー名を引っ張ってくる予定場所 -->
+          <div class="user_name">
+            <span>ユーザー１</span>
+          </div>
+
+          <!-- いちばん最近に入力されたトーク内容を引っ張ってくる予定場所 -->
+          <div class="talk_contents">
+            <p>ねえねえねえねえねえねえねえねえねえねえ</p>
+          </div>
+
+          <!-- 最後に入力された時刻 -->
+          <!-- 遊ぶ日過ぎたら消えるという機能が増えるかも -->
+          <div class="uptime">
+            <span>2020/09/02</span>
+          </div>
+        </div>
+        <hr class="sikiri">
+      </div>
+
+
+
+
+
+        <!-- アンダーナビ（スマホ版） -->
+        <div class="undernavi">
+          <div class="under_menu">
+            <ul>
+              <li><a href="home.html"><img src="images/icon_home_white.png" alt="ホームアイコン"><span>ホーム</span></a></li>
+              <li><a href="list.html"><img src="images/icon_list_white.png" alt="リストアイコン"><span>リスト</span></a></li>
+              <li><a href="talk.html"><img src="images/icon_talk_black.png" alt="トークアイコン"><span>トーク</span></a></li>
+              <li><a href="match.html"><img src="images/icon_match_white.png" alt="マッチアイコン"><span>マッチ</span></a></li>
+            </ul>
+          </div>
+        </div>
         <!-- ーーーーーコンテンツ配置ここまでーーーーーーーーーーーー -->
       </div>
     </div>
@@ -115,7 +378,6 @@
 
     <!-- ライトナビ -->
     <div class="rightnavi">
-
     </div>
 
   </div>
