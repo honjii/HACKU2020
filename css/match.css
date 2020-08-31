@@ -42,14 +42,12 @@
 
 .menu-reception a {
   display: block;
-  padding: 15px;
   text-decoration: none;
   color: #000;
 }
 
 label {
   display: block;
-  margin: 0 0 4px 0;
   padding: 15px;
   line-height: 1;
   color: #fff;
@@ -57,6 +55,7 @@ label {
   background: #006699;
   cursor: pointer;
   transition: all 0.5s;
+  border-bottom: solid 1px #000;
 }
 
 label:hover {
@@ -99,7 +98,7 @@ input[type="checkbox"].open_close_c:checked+ul {
 }
 
 #menu_bar01:checked~#links01 li, #menu_bar02:checked~#links02 li, #menu_bar03:checked~#links03 li, #menu_bar04:checked~#links04 li {
-  height: 54px;
+  height: 74px;
   opacity: 1;
 }
 
@@ -123,6 +122,32 @@ input[type="checkbox"].open_close_c:checked+ul {
 	cursor: pointer;
 } */
 
-.menu-reception li a:hover{
+/* 名前ホバー時に背景色を変える */
+
+.menu-reception li a:hover {
   background-color: #ddd;
+}
+
+.menu-reception li a img {
+  margin: 5px 10px;
+  width: 60px;
+}
+
+.menu-reception li {
+  position: relative;
+}
+
+.menu-reception span {
+  position: absolute;
+  top: 28px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu-reception {
+  position: relative;
+}
+.char-icon-under{
+  position: absolute;
+  right: 20px;
 }
