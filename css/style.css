@@ -74,7 +74,8 @@ body {
 
 .menu ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
+  letter-spacing: 10px;
 }
 
 .menu ul li a:hover {
@@ -83,6 +84,7 @@ body {
 
 .menu ul li a img {
   width: 40px;
+  margin-right: 10px;
 }
 
 .menu ul li:last-child {
@@ -103,9 +105,18 @@ body {
   display: none;
 }
 
+h1 {
+  font-family: 'Fredoka One', cursive;
+  color: #fff;
+  font-size: 62px;
+  letter-spacing: 10px;
+}
+
 h2 {
   text-align: center;
   margin: 0;
+  color: #fff;
+  letter-spacing: 10px;
 }
 
 .menu ul li span {
@@ -176,7 +187,7 @@ h2 {
   }
   .under_menu ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
   }
   .under_menu ul li a:hover {
     color: #f361a7;
