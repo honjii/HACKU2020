@@ -24,7 +24,8 @@
     width: 100%;
     height: 100%;
   }
-  .table-calendar th, .table-calendar td {
+  .table-calendar th,
+  .table-calendar td {
     padding: 20px;
     font-size: 24px;
     text-align: center;
@@ -34,7 +35,7 @@
   .date-picker.selected {
     font-weight: bold;
     color: #fff;
-    background: #cc0000;
+    background: #ffec47;
   }
   .date-picker.selected span {
     border-bottom: 2px solid currentColor;
@@ -66,13 +67,19 @@
   }
   #previous {
     float: left;
-    margin-left: 10em;
-    outline: none;
+    margin-left: 1em;
+    outline: 0;
+  }
+  #previous:focus {
+    outline: 0;
   }
   #next {
     float: right;
-    margin-right: 10em;
-    outline: none;
+    margin-right: 1em;
+    outline: 0;
+  }
+  #next:focus {
+    outline: 0;
   }
   .footer-container-calendar {
     margin-top: 40px;
@@ -100,7 +107,7 @@
     width: 100%;
     margin: 0 0 0 auto;
     margin-right: 2em;
-    margin-top: 2em;
+    margin-top: 5em;
     overflow: auto;
     max-width: 800px;
   }
@@ -108,9 +115,9 @@
     cursor: pointer;
     display: inline-block;
     zoom: 1;
-    background: #00a2b7;
+    background: #ff8c00;
     color: #fff;
-    border: 1px solid #0aa2b5;
+    border: 1px solid #ff8c00;
     border-radius: 4px;
     padding: 20px 10px;
   }
@@ -119,7 +126,8 @@
     width: 100%;
     height: 100%;
   }
-  .table-calendar th, .table-calendar td {
+  .table-calendar th,
+  .table-calendar td {
     padding: 18px;
     font-size: 22px;
     text-align: center;
@@ -130,7 +138,7 @@
   .date-picker.selected {
     font-weight: bold;
     color: #fff;
-    background: #cc0000;
+    background: #ffec47;
   }
   .date-picker.selected span {
     border-bottom: 2px solid currentColor;
@@ -163,11 +171,19 @@
   }
   #previous {
     float: left;
-    margin-left: 2em;
+    margin-left: 1em;
+    outline: 0;
+  }
+  #previous:focus {
+    outline: 0;
   }
   #next {
     float: right;
-    margin-right: 2em;
+    margin-right: 1em;
+    outline: 0;
+  }
+  #next:focus {
+    outline: 0;
   }
   .footer-container-calendar {
     margin-top: 40px;
@@ -195,7 +211,7 @@
     width: 100%;
     margin: 0 auto;
     margin-right: 2em;
-    margin-top: 4em;
+    margin-top: 5em;
     overflow: auto;
     max-width: 469px;
   }
@@ -203,9 +219,9 @@
     cursor: pointer;
     display: inline-block;
     zoom: 1;
-    background: #00a2b7;
+    background: #ff8c00;
     color: #fff;
-    border: 1px solid #0aa2b5;
+    border: 1px solid #ff8c00;
     border-radius: 50%;
     padding: 16px 20px;
   }
@@ -214,7 +230,8 @@
     width: 100%;
     height: 100%;
   }
-  .table-calendar th, .table-calendar td {
+  .table-calendar th,
+  .table-calendar td {
     padding: 15px;
     font-size: 14px;
     text-align: center;
@@ -224,7 +241,7 @@
   .date-picker.selected {
     font-weight: bold;
     color: #fff;
-    background: #cc0000;
+    background: #ffec47;
   }
   .date-picker.selected span {
     border-bottom: 2px solid currentColor;
@@ -257,10 +274,18 @@
   #previous {
     float: left;
     margin-left: 1em;
+    outline: 0;
+  }
+  #previous:focus {
+    outline: 0;
   }
   #next {
     float: right;
     margin-right: 1em;
+    outline: 0;
+  }
+  #next:focus {
+    outline: 0;
   }
   .footer-container-calendar {
     margin-top: 20px;
@@ -282,6 +307,8 @@
 
 /* 日付入力削除 */
 
-label, #year, #month {
+label,
+#year,
+#month {
   display: none;
 }
