@@ -48,6 +48,10 @@ body {
   display: none;
 }
 
+.main_contents {
+  margin-top: 47px;
+}
+
 .rightnavi {
   flex: 1;
   padding: 0 15px;
@@ -71,7 +75,8 @@ body {
 
 .menu ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
+  letter-spacing: 10px;
 }
 
 .menu ul li a:hover {
@@ -80,6 +85,7 @@ body {
 
 .menu ul li a img {
   width: 40px;
+  margin-right: 10px;
 }
 
 .menu ul li:last-child {
@@ -89,6 +95,9 @@ body {
 /* メインコンテンツ */
 
 .header {
+  position: fixed;
+  z-index: 999;
+  width: 499px;
   padding: 10px 0;
   background-color: #0f4c81;
   height: 80px;
@@ -98,10 +107,19 @@ body {
   display: none;
 }
 
+h1 {
+  font-family: 'Fredoka One', cursive;
+  color: #fff;
+  font-size: 62px;
+  letter-spacing: 10px;
+}
+
 h2 {
   text-align: center;
   margin: 0;
-  margin-top: 20px;
+  color: #fff;
+  letter-spacing: 10px;
+   margin-top: 20px;
 }
 
 .menu ul li span {
@@ -123,6 +141,9 @@ h2 {
     width: 200px;
     padding: 0 15px;
   }
+  .header {
+    width: 100%;
+  }
   .contents {
     flex: 1;
   }
@@ -138,6 +159,9 @@ h2 {
   }
   .contents {
     flex: 1;
+  }
+  .main_contents {
+    margin-bottom: 60px;
   }
   .rightnavi {
     display: none;
@@ -167,7 +191,7 @@ h2 {
   }
   .under_menu ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
   }
   .under_menu ul li a:hover {
     color: #f361a7;
@@ -183,8 +207,8 @@ h2 {
   }
   /* 設定アイコンを出現させる */
   .header {
+    position: fixed;
     text-align: center;
-    position: relative;
   }
   .header h2 {
     display: inline-block;

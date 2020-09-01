@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("normalize.css");
-
 /* .talk_home {
 
 } */
@@ -16,7 +14,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 74px;
   text-indent:-999px;
   z-index: 2;
 }
@@ -29,6 +27,7 @@
 .user_icon img {
   height: 60px;
   margin: 5px 10px;
+  border: solid 2px #000;
   border-radius: 50%;
 }
 
@@ -36,7 +35,7 @@
   position: absolute;
   top: 25%;
   left: 90px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -46,6 +45,7 @@
   width: 100%;
   top: 55%;
   left: 90px;
+  font-size: 12px;
   opacity: 0.5; /* 透明度を50%に */
 }
 .talk_contents p {
