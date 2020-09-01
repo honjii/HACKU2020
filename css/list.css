@@ -4,6 +4,9 @@ p {
   padding: 0;
 }
 
+.main_contents{
+  margin-top: 90px;
+}
 /* 検索欄 */
 
 .search-wrapper {
