@@ -10,7 +10,8 @@ html {
 
 body {
   font-size: 16px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
   color: #333;
   height: 100%;
 }
@@ -26,7 +27,7 @@ body {
 .leftnavi {
   width: 200px;
   padding: 0 15px;
-  background-color: #03d3d3;
+  background-color: #0f4c81;
 }
 
 .leftnavi h1 img {
@@ -89,7 +90,8 @@ body {
 
 .header {
   padding: 10px 0;
-  background-color: #03d3d3;
+  background-color: #0f4c81;
+  height: 80px;
 }
 
 .header ul {
@@ -99,6 +101,7 @@ body {
 h2 {
   text-align: center;
   margin: 0;
+  margin-top: 20px;
 }
 
 .menu ul li span {
@@ -145,9 +148,10 @@ h2 {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: #03d3d3;
+    background: #0f4c81;
     position: fixed;
     z-index: 999;
+    padding: 10px 0;
   }
   .under_menu ul {
     padding-top: 5px;
@@ -179,8 +183,8 @@ h2 {
   }
   /* 設定アイコンを出現させる */
   .header {
-  text-align: center;
-  position: relative;
+    text-align: center;
+    position: relative;
   }
   .header h2 {
     display: inline-block;
@@ -190,8 +194,8 @@ h2 {
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 18%;
-    left: 87%;
+    top: 35%;
+    left: 85%;
   }
   .header ul li {
     list-style: none;
