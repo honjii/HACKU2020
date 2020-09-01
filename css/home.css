@@ -76,14 +76,19 @@
 
   #previous {
     float: left;
-    margin-left: 10em;
-    outline: none;
+    margin-left: 1em;
+    outline: 0;
   }
-
+  #previous:focus {
+    outline: 0;
+  }
   #next {
     float: right;
-    margin-right: 10em;
-    outline: none;
+    margin-right: 1em;
+    outline: 0;
+  }
+  #next:focus {
+    outline: 0;
   }
 
   .footer-container-calendar {
@@ -185,12 +190,19 @@
 
   #previous {
     float: left;
-    margin-left: 2em;
+    margin-left: 1em;
+    outline: 0;
   }
-
+  #previous:focus {
+    outline: 0;
+  }
   #next {
     float: right;
-    margin-right: 2em;
+    margin-right: 1em;
+    outline: 0;
+  }
+  #next:focus {
+    outline: 0;
   }
 
   .footer-container-calendar {
@@ -293,11 +305,18 @@
   #previous {
     float: left;
     margin-left: 1em;
+    outline: 0;
   }
-
+  #previous:focus {
+    outline: 0;
+  }
   #next {
     float: right;
     margin-right: 1em;
+    outline: 0;
+  }
+  #next:focus {
+    outline: 0;
   }
 
   .footer-container-calendar {
