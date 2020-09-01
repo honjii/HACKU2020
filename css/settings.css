@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .contents .main_contents p {
     background-color: #006699;
     border-top: 1px solid #000;
@@ -37,7 +38,7 @@
     padding-left: 15px;
 }
 
-.first{
+.first {
     margin-top: 58px;
 }
 
