@@ -8,7 +8,8 @@ p {
 
 .search-wrapper {
   text-align: center;
-  margin: 20px auto;
+  margin: 20px 0 10px 0;
+  margin-top: 57px;
 }
 
 input[type="text"] {
