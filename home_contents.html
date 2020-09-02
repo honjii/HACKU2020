@@ -53,57 +53,24 @@
         <form action="" method="POST">
           <h3>日付：2020年9月2日</h3>
           <h3>いつ頃？</h3>
-
           <div class="time_contents">
-            <div class="time_select"><input type="checkbox" name="" value=""><span>朝</span></div>
-            <div class="time_select"><input type="checkbox" name="" value=""><span>昼</span></div>
-            <div class="time_select"><input type="checkbox" name="" value=""><span>夕</span></div>
-            <div class="time_select"><input type="checkbox" name="" value=""><span>夜</span></div>
+            <form>
+              <ul class="time_select">
+                <li class="morning"><input type="checkbox" checked><label></label></li>
+                <li class="noon"><input type="checkbox"><label></label></li>
+                <li class="evening"><input type="checkbox"><label></label></li>
+                <li class="night"><input type="checkbox"><label></label></li>
+              </ul>
+            </form>
+            <ul class="time_index">
+              <li>朝</li>
+              <li>昼</li>
+              <li>夕</li>
+              <li>夜</li>
+            </ul>
           </div>
 
-        <div class="time_contents">
-          <div class="time_select">
-            <div class="time_icon">
-              <input type="checkbox" name="" value="">
-              <img src="images/moming.png" alt="朝">
-            </div>
-            <span>朝</span>
-          </div>
-          <div class="time_select">
-            <div class="time_icon">
-              <input type="checkbox" name="" value="">
-              <img src="images/noon.png" alt="朝">
-            </div>
-            <span>昼</span>
-          </div>
-          <div class="time_select">
-            <div class="time_icon">
-              <input type="checkbox" name="" value="">
-              <img src="images/evening.png" alt="朝">
-            </div>
-            <span>夕</span>
-          </div>
-          <div class="time_select">
-            <div class="time_icon">
-              <input type="checkbox" name="" value="">
-              <img src="images/night.png" alt="朝">
-            </div>
-            <span>夜</span>
-          </div>
-        </div>
-
-
-        <!-- 文字バージョン -->
-        <!-- <div class="time_contents">
-          <div class="time_select"><input type="checkbox" name="" value=""><span>朝</span></div>
-          <div class="time_select"><input type="checkbox" name="" value=""><span>昼</span></div>
-          <div class="time_select"><input type="checkbox" name="" value=""><span>夕</span></div>
-          <div class="time_select"><input type="checkbox" name="" value=""><span>夜</span></div>
-        </div> -->
-        
-        <h3>あそび相手は？</h3>
-
-
+          <h3>あそび相手は？</h3>
           <div class="friend_select">
             <div class="pic">
               <input type="checkbox" id="pic1" class="" name="" value="">
