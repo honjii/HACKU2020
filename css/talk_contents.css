@@ -52,7 +52,6 @@
 
 #back_button img {
   width: 15px;
-
 }
 
 /* ユーザー名を左寄せバージョン */
@@ -118,11 +117,11 @@
   display: flex;
 }
 
-.messages li+li {
+.messages li + li {
   margin-top: 10px;
 }
 
-.messages li+li p {
+.messages li + li p {
   margin: 0;
 }
 
@@ -160,7 +159,7 @@ li.right-side {
 }
 
 .text::before {
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   /* border: 8px solid #fff; */
@@ -180,6 +179,9 @@ li.right-side {
   border-left-color: #fff;
 }
 
+.talk_back {
+  transform: rotate(90deg);
+}
 /* 入力エリア */
 
 #bms_send {
