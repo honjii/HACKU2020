@@ -71,7 +71,7 @@ function showCalendar(month, year) {
 
   tbl.innerHTML = "";
 
-  monthAndYear.innerHTML = year + " " + months[month];
+  monthAndYear.innerHTML = year + "年 " + months[month];
   selectYear.value = year;
   selectMonth.value = month;
 
@@ -95,8 +95,7 @@ function showCalendar(month, year) {
         cell.setAttribute("data-year", year);
         cell.setAttribute("data-month_name", months[month]);
         cell.className = "date-picker";
-        cell.innerHTML = "<span>" + date + "</span>";
-
+        cell.innerHTML = "<a href=\"home_contents.html ?ymd=" + year + "年" + (month + 1) + "月" + date + "日" + "\">" + date + "</a>";
         if (
           date === today.getDate() &&
           year === today.getFullYear() &&
