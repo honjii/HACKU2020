@@ -27,19 +27,18 @@
   position: absolute;
   right: 40px;
   top: calc(50% - 2px);
-  border-top: solid 2px;
-  border-right: solid 2px;
+  border-top: solid 1px;
+  border-right: solid 1px;
   transform: rotate(45deg) translateY(-50%);
-  color: inherit;
+  color: #c2c2c2;
 }
-
 .contents .main_contents h3 {
   margin-bottom: 0;
   margin-bottom: 3px;
   padding-left: 15px;
 }
-.main_contents{
-    margin-top: 98px;
+.main_contents {
+  margin-top: 98px;
 }
 
 .first {
