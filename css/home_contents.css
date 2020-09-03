@@ -21,18 +21,12 @@ from {
   position: absolute;
 }
 
-ul{ 
+
+.time_select {
   list-style-type:none; 
   margin:0;
   padding:0;
   display: inline;
-}
-
-.time_select {
-  width: 320px;
-  height: 85px;
-  /* margin: 0 27px; */
-  padding: 0;
 }
 
 .time_select li {
@@ -97,7 +91,10 @@ ul{
 }
 
 .time_index {
-  width: 320px;
+  list-style-type:none; 
+  margin:0;
+  padding:0;
+  display: inline;
 }
 
 /* ------------------ 時間帯指定エリア終了------------------ */
