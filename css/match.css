@@ -70,12 +70,12 @@ input[type="checkbox"].open_close_c {
   display: none;
 }
 
-input[type="checkbox"].open_close_c + ul {
+input[type="checkbox"].open_close_c+ul {
   height: 0;
   overflow: hidden;
 }
 
-input[type="checkbox"].open_close_c:checked + ul {
+input[type="checkbox"].open_close_c:checked+ul {
   height: 110px;
   padding: 10px;
 }
@@ -97,10 +97,15 @@ input[type="checkbox"].open_close_c:checked + ul {
   transition: all 0.5s;
 }
 
-#menu_bar01:checked ~ #links01 li,
-#menu_bar02:checked ~ #links02 li,
-#menu_bar03:checked ~ #links03 li,
-#menu_bar04:checked ~ #links04 li {
+#menu_bar01:checked~#links01 li,
+#menu_bar02:checked~#links02 li,
+#menu_bar03:checked~#links03 li,
+#menu_bar04:checked~#links04 li,
+#menu_bar05:checked~#links05 li,
+#menu_bar06:checked~#links06 li,
+#menu_bar07:checked~#links07 li,
+#menu_bar08:checked~#links08 li,
+#menu_bar09:checked~#links09 li {
   height: 74px;
   opacity: 1;
 }
@@ -150,6 +155,7 @@ input[type="checkbox"].open_close_c:checked + ul {
 .menu-reception {
   position: relative;
 }
+
 .char-icon-under {
   position: absolute;
   right: 20px;

@@ -7,9 +7,8 @@ h3 {
   text-align: center;
 }
 
-
-
 /* ------------------ 時間帯指定エリア ------------------ */
+
 .time_contents {
   position: relative;
   width: 321px;
@@ -17,15 +16,15 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
+
 from {
   position: absolute;
 }
 
-
 .time_select {
-  list-style-type:none; 
-  margin:0;
-  padding:0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: inline;
 }
 
@@ -44,11 +43,11 @@ from {
   top: 0;
   margin: 0;
   opacity: 0;
-  width: 100%;  
+  width: 100%;
   height: 100%;
 }
 
-.time_select input[type="checkbox"] + label {
+.time_select input[type="checkbox"]+label {
   display: block;
   /* background-image: url(../images/moming.png);
   background-size: 40px;
@@ -61,28 +60,32 @@ from {
   width: 60px;
   height: 60px;
 }
-.morning input[type="checkbox"] + label {
+
+.morning input[type="checkbox"]+label {
   display: block;
   background-image: url(../images/morning.png);
   background-size: 40px;
   background-position: center;
   background-repeat: no-repeat;
 }
-.noon input[type="checkbox"] + label {
+
+.noon input[type="checkbox"]+label {
   display: block;
   background-image: url(../images/noon.png);
   background-size: 40px;
   background-position: center;
   background-repeat: no-repeat;
 }
-.evening input[type="checkbox"] + label {
+
+.evening input[type="checkbox"]+label {
   display: block;
   background-image: url(../images/evening.png);
   background-size: 40px;
   background-position: center;
   background-repeat: no-repeat;
 }
-.night input[type="checkbox"] + label {
+
+.night input[type="checkbox"]+label {
   display: block;
   background-image: url(../images/night.png);
   background-size: 40px;
@@ -91,21 +94,19 @@ from {
 }
 
 .time_index {
-  list-style-type:none; 
-  margin:0;
-  padding:0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: inline;
 }
 
 /* ------------------ 時間帯指定エリア終了------------------ */
 
-
-
-
 /* ↓選択したときの効果 */
-.time_select input[type="checkbox"]:checked + label {
+
+.time_select input[type="checkbox"]:checked+label {
   /* background-image: url(../images/noon.png); */
-  border-color: royalblue;
+  background-color: royalblue;
 }
 
 .time_index {
@@ -114,6 +115,7 @@ from {
 }
 
 /* ↓朝昼夕夜の配置を強引に配置 */
+
 .time_index li {
   margin: 5px 35px 0 30px;
 }
@@ -239,9 +241,44 @@ input[type="submit"] {
   border-radius: 10px;
   outline: none;
   cursor: pointer;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 
 input[type="submit"]:hover {
   background-color: #0f4c81;
+}
+
+input {
+  cursor: pointer;
+}
+
+.main_contents {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+h3 {
+  text-align: center;
+  padding-left: 24px;
+}
+
+.when {
+  margin-bottom: 20px;
+}
+
+.person {
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+
+
+#back_button a{
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  padding: 20px;
+}
+.talk_back {
+  transform: rotate(90deg);
+  width: 15px;
 }
