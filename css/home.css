@@ -316,6 +316,8 @@
 
 /* 日付入力削除 */
 
+.footer-container-calendar {}
+
 label, #year, #month {
   display: none;
 }
@@ -336,7 +338,6 @@ td a {
   color: #333;
 }
 
-
 .date-picker:nth-child(1) a {
   color: red;
 }
@@ -345,4 +346,23 @@ td a {
 
 .date-picker:nth-child(7) a {
   color: blue;
+}
+
+.scedule {
+  text-align: center;
+}
+
+.scedule p {
+  display: inline-block;
+  background-color: #006699;
+  padding: 20px 40px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.scedule p:hover {
+  background-color: #0f4c81;
 }

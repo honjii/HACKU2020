@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="友達両想いアプリのサイトです。" />
   <meta name="keywords" content="アプリ, SNS, コンコン, せきしょう" />
-  <title>FILL/</title>
+  <title>FILL/スケジュール</title>
   <link rel="shortcut icon" href="images/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -41,25 +41,27 @@
     <!-- メインコンテンツ -->
     <div class="contents">
       <div class="header">
-        <h2>スケジュール</h2>
-        <ul>
+        <div id="back_button">
+          <a href="home.html"><img src="images/reception_under.png" alt="戻るボタン" class="talk_back"></a>
+        </div>
+        <h2>2020/09/05</h2>
+        <!-- <ul>
           <li>
             <a href="settings.html"><img src="images/icon_settings_white.png" alt="設定アイコン" /></a>
           </li>
-        </ul>
+        </ul> -->
       </div>
 
 
-        <div class="main_contents">
-          <!-- ーーーーーここにそれぞれのコンテンツを配置するーーーーー -->
-         <form action="" method="POST">
-          <h3>日付：2020年9月2日</h3>
-          <h3>いつ頃？</h3>
+      <div class="main_contents">
+        <!-- ーーーーーここにそれぞれのコンテンツを配置するーーーーー -->
+        <form action="" method="POST">
+          <h3 class="when">いつ頃？</h3>
 
           <div class="time_contents">
             <form>
               <ul class="time_select">
-                <li class="morning"><input type="checkbox" checked><label></label></li>
+                <li class="morning"><input type="checkbox"><label></label></li>
                 <li class="noon"><input type="checkbox"><label></label></li>
                 <li class="evening"><input type="checkbox"><label></label></li>
                 <li class="night"><input type="checkbox"><label></label></li>
@@ -73,8 +75,8 @@
             </ul>
           </div>
 
-          <h3>あそび相手は？</h3>
-            <div class="friend_select">
+          <h3 class="person">あそび相手は？</h3>
+          <div class="friend_select">
             <div class="pic">
               <input type="checkbox" id="pic1" class="" name="" value="">
               <label for="pic1"><img src="images/sample_usericon.png" alt=""><span>山田太郎</span></label>
@@ -123,7 +125,7 @@
               <input type="checkbox" id="pic12" class="" name="" value="">
               <label for="pic12"><img src="images/sample_usericon.png" alt=""><span>コンコン</span></label>
             </div>
-          
+
             <!-- <div class="pic"><img src="images/sample_usericon.png" alt=""></div>
           <div class="pic"><img src="images/sample_usericon.png" alt=""></div>
           <div class="pic"><img src="images/sample_usericon.png" alt=""></div>
@@ -132,12 +134,12 @@
           </div>
 
 
-<!--           <div class="select_ok"><a href="#">BUTTON</a></div> -->
-           <input type="submit" value="決定">
-          </form>
-          <!-- <a href="#" class="select_ok">BUTTON</a> -->
+          <!--           <div class="select_ok"><a href="#">BUTTON</a></div> -->
+          <input type="submit" value="決定">
+        </form>
+        <!-- <a href="#" class="select_ok">BUTTON</a> -->
 
-          <!-- <div class="container-calendar">
+        <!-- <div class="container-calendar">
 
             <div class="day_wrapper">
               <h4 id="monthAndYear"></h4>
@@ -174,7 +176,7 @@
       </div>
 
       <!-- アンダーナビ（スマホ版） -->
-      <div class="undernavi">
+      <!-- <div class="undernavi">
         <div class="under_menu">
           <ul>
             <li>
@@ -191,7 +193,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- ライトナビ -->
